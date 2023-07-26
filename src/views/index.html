@@ -5,9 +5,28 @@
     <meta name='viewport'
           content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Document</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <!--    <link rel='stylesheet' href='css/register.css'>-->
+    <link rel='stylesheet' href='css/chat.css'>
+    <title>!Michi Chat</title>
 </head>
 <body>
+<header>
     <h1>Socket.io</h1>
+</header>
+
+
+<main>
+    <div id='all-messages'>
+<!--    Se inserta la programacion del chat-->
+    </div>
+    <div class='send-message'>
+        <label for='message'></label><input type='text' id='message' />
+        <button type='button' id='send-message' class='btn secondary'>Enviar</button>
+    </div>
+</main>
+
+<script src='/socket.io/socket.io.js'></script>
+<script src='js/script.js'></script>
 </body>
 </html>
